@@ -1,0 +1,272 @@
+{
+  "status": "reference_analysis_not_live_api",
+  "decision_date": "2026-01-15",
+  "cutoff_local": "09:00",
+  "timezone": "Europe/London",
+  "series": [
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T00:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7398,
+      "actual_hourly_mean_mw": 7335.5,
+      "error_mw": 62.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T01:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7008,
+      "actual_hourly_mean_mw": 7084.0,
+      "error_mw": -76.0,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T02:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 6731,
+      "actual_hourly_mean_mw": 6919.5,
+      "error_mw": -188.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T03:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 6555,
+      "actual_hourly_mean_mw": 7162.5,
+      "error_mw": -607.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T04:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 6355,
+      "actual_hourly_mean_mw": 6886.5,
+      "error_mw": -531.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T05:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 6288,
+      "actual_hourly_mean_mw": 6077.5,
+      "error_mw": 210.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T06:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 6242,
+      "actual_hourly_mean_mw": 5228.5,
+      "error_mw": 1013.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T07:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 6338,
+      "actual_hourly_mean_mw": 5840.0,
+      "error_mw": 498.0,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T08:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 6594,
+      "actual_hourly_mean_mw": 5778.5,
+      "error_mw": 815.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T09:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7064,
+      "actual_hourly_mean_mw": 6450.0,
+      "error_mw": 614.0,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T10:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7566,
+      "actual_hourly_mean_mw": 7789.0,
+      "error_mw": -223.0,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T11:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7814,
+      "actual_hourly_mean_mw": 8585.5,
+      "error_mw": -771.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T12:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7779,
+      "actual_hourly_mean_mw": 8766.5,
+      "error_mw": -987.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T13:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7612,
+      "actual_hourly_mean_mw": 8779.0,
+      "error_mw": -1167.0,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T14:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7565,
+      "actual_hourly_mean_mw": 8182.0,
+      "error_mw": -617.0,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T15:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 7827,
+      "actual_hourly_mean_mw": 7473.5,
+      "error_mw": 353.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T16:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 8377,
+      "actual_hourly_mean_mw": 7297.5,
+      "error_mw": 1079.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T17:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 8977,
+      "actual_hourly_mean_mw": 7365.5,
+      "error_mw": 1611.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T18:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 9511,
+      "actual_hourly_mean_mw": 8392.5,
+      "error_mw": 1118.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T19:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 9961,
+      "actual_hourly_mean_mw": 9206.5,
+      "error_mw": 754.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T20:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 10267,
+      "actual_hourly_mean_mw": 9020.0,
+      "error_mw": 1247.0,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T21:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 10375,
+      "actual_hourly_mean_mw": 8273.5,
+      "error_mw": 2101.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T22:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 10207,
+      "actual_hourly_mean_mw": 8824.5,
+      "error_mw": 1382.5,
+      "missing_reason": ""
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "cutoff_utc": "2026-01-15T09:00:00Z",
+      "start_time": "2026-01-16T23:00:00Z",
+      "publish_time": "2026-01-15T07:30:00Z",
+      "forecast_mw": 9919,
+      "actual_hourly_mean_mw": 9165.0,
+      "error_mw": 754.0,
+      "missing_reason": ""
+    }
+  ]
+}

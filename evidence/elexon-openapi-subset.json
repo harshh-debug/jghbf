@@ -1,0 +1,283 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "Insights.Api",
+    "version": "1.0"
+  },
+  "servers": [
+    {
+      "url": "https://data.elexon.co.uk/bmrs/api/v1"
+    }
+  ],
+  "paths": {
+    "/datasets/WINDFOR/stream": {
+      "get": {
+        "tags": [
+          "BMRS Datasets"
+        ],
+        "summary": "Wind generation forecast (WINDFOR) stream",
+        "description": "This endpoint provides wind generation forecast data.\n\nSpecific publish time filters may be supplied, otherwise this will retrieve the latest published forecast.\n\nThis endpoint has an optimised JSON payload and is aimed at frequent requests for the data.",
+        "parameters": [
+          {
+            "name": "publishDateTimeFrom",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "publishDateTimeTo",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data retrieved",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insights.Api.Models.Responses.Generation.DatasetRows.WindGenerationForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insights.Api.Models.Responses.Generation.DatasetRows.WindGenerationForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insights.Api.Models.Responses.Generation.DatasetRows.WindGenerationForecast"
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests"
+          },
+          "400": {
+            "description": "Error with query parameters - see response for details"
+          },
+          "500": {
+            "description": "Server error - please try again later"
+          }
+        }
+      }
+    },
+    "/datasets/FUELHH/stream": {
+      "get": {
+        "tags": [
+          "BMRS Datasets"
+        ],
+        "summary": "Half-hourly generation outturn by fuel type (FUELHH) stream",
+        "description": "This endpoint provides the half-hourly generation outturn (Generation By Fuel type)\nto give our users an indication of the generation outturn for Great Britain.\nThe data is aggregated by Fuel Type category and updated at 30-minute intervals with\naverage MW values over 30 minutes for each category.\n            \nThis endpoint includes additional settlement parameters such as Settlement Date and Settlement Period.\nThe Settlement Date fields cannot be set when a Publish Date field is set.\n            \nSettlement date parameters must be provided in the exact format yyyy-MM-dd.\n            \nThis endpoint has an optimised JSON payload and is aimed at frequent requests for the data.",
+        "parameters": [
+          {
+            "name": "publishDateTimeFrom",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time",
+              "example": "2022-06-25T00:00:00Z"
+            },
+            "example": "2022-06-25T00:00:00Z"
+          },
+          {
+            "name": "publishDateTimeTo",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time",
+              "example": "2022-06-26T00:00:00Z"
+            },
+            "example": "2022-06-26T00:00:00Z"
+          },
+          {
+            "name": "settlementDateFrom",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date",
+              "example": "2022-09-20"
+            },
+            "example": "2022-09-20"
+          },
+          {
+            "name": "settlementDateTo",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date",
+              "example": "2022-09-21"
+            },
+            "example": "2022-09-21"
+          },
+          {
+            "name": "settlementPeriod",
+            "in": "query",
+            "description": "List of Settlement Periods",
+            "schema": {
+              "uniqueItems": true,
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "format": "int32"
+              },
+              "example": [
+                3,
+                4
+              ]
+            },
+            "example": [
+              3,
+              4
+            ]
+          },
+          {
+            "name": "fuelType",
+            "in": "query",
+            "description": "Fuel Type e.g. NUCLEAR",
+            "schema": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "example": [
+                "NUCLEAR"
+              ]
+            },
+            "example": [
+              "NUCLEAR"
+            ]
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Data retrieved",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insights.Api.Models.Responses.Generation.DatasetRows.AugmentedOutturnData"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insights.Api.Models.Responses.Generation.DatasetRows.AugmentedOutturnData"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Insights.Api.Models.Responses.Generation.DatasetRows.AugmentedOutturnData"
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too many requests"
+          },
+          "400": {
+            "description": "Error with query parameters - see response for details"
+          },
+          "500": {
+            "description": "Server error - please try again later"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Insights.Api.Models.Responses.Generation.DatasetRows.WindGenerationForecast": {
+        "type": "object",
+        "properties": {
+          "dataset": {
+            "type": "string",
+            "nullable": true
+          },
+          "publishTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "generation": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Insights.Api.Models.Responses.Generation.DatasetRows.AugmentedOutturnData": {
+        "type": "object",
+        "properties": {
+          "dataset": {
+            "type": "string",
+            "nullable": true,
+            "example": "FUELINST"
+          },
+          "publishTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "example": "2022-06-25T13:00:00Z"
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true,
+            "example": "2022-06-25T13:00:00Z"
+          },
+          "settlementDate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true,
+            "example": "2022-06-25"
+          },
+          "settlementPeriod": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true,
+            "example": 3
+          },
+          "fuelType": {
+            "type": "string",
+            "nullable": true,
+            "example": "BIOMASS"
+          },
+          "generation": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true,
+            "example": 0
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "description": "Unmodified Elexon stream response bodies. WINDFOR requests filter publication time, not target time.",
+  "scope": {
+    "decision_dates": [
+      "2026-01-01",
+      "2026-01-31"
+    ],
+    "delivery_dates": [
+      "2026-01-02",
+      "2026-02-01"
+    ],
+    "buffer_actual_date": "2026-01-01",
+    "forecast_publication_buffer_from": "2025-12-30"
+  },
+  "boundary_policy": "Upstream inclusion is not assumed. Deduplicate exact overlaps and filter locally to explicit half-open windows.",
+  "requests": [
+    {
+      "path": "data/raw/windfor_2025-12-30_2026-01-06.json",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2025-12-30T00%3A00%3A00Z&publishDateTimeTo=2026-01-06T00%3A00%3A00Z",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-28T19:20:36.177102+00:00",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 28 Oct 2026 19:20:35 GMT"
+      },
+      "bytes": 460978,
+      "rows": 4088,
+      "sha256": "b54fc9b13db68107a51f7c14b82dd0df6a8bfa6c729641fc0bb03eca1cc99ad2",
+      "parameters": {
+        "publishDateTimeFrom": "2025-12-30T00:00:00Z",
+        "publishDateTimeTo": "2026-01-06T00:00:00Z"
+      }
+    },
+    {
+      "path": "data/raw/windfor_2026-01-06_2026-01-13.json",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2026-01-06T00%3A00%3A00Z&publishDateTimeTo=2026-01-13T00%3A00%3A00Z",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-28T19:20:36.139333+00:00",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 28 Oct 2026 19:20:35 GMT"
+      },
+      "bytes": 460503,
+      "rows": 4088,
+      "sha256": "468f0dacc0f53b9b4fb4aed07e4afb23c513a30762ab6402b2ccb41c6963d8c9",
+      "parameters": {
+        "publishDateTimeFrom": "2026-01-06T00:00:00Z",
+        "publishDateTimeTo": "2026-01-13T00:00:00Z"
+      }
+    },
+    {
+      "path": "data/raw/windfor_2026-01-13_2026-01-20.json",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2026-01-13T00%3A00%3A00Z&publishDateTimeTo=2026-01-20T00%3A00%3A00Z",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-28T19:20:43.876611+00:00",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 28 Oct 2026 19:20:43 GMT"
+      },
+      "bytes": 459194,
+      "rows": 4088,
+      "sha256": "bb376e787c895029dbe63e3fa9d5ac99eb0dd206d883fad557d4727c5839f009",
+      "parameters": {
+        "publishDateTimeFrom": "2026-01-13T00:00:00Z",
+        "publishDateTimeTo": "2026-01-20T00:00:00Z"
+      }
+    },
+    {
+      "path": "data/raw/windfor_2026-01-20_2026-01-27.json",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2026-01-20T00%3A00%3A00Z&publishDateTimeTo=2026-01-27T00%3A00%3A00Z",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-28T19:20:43.919789+00:00",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 28 Oct 2026 19:20:43 GMT"
+      },
+      "bytes": 461699,
+      "rows": 4088,
+      "sha256": "0711465682cb990ab371aa390ca98595fc9e84bfb396757ae61dd41aeab97fac",
+      "parameters": {
+        "publishDateTimeFrom": "2026-01-20T00:00:00Z",
+        "publishDateTimeTo": "2026-01-27T00:00:00Z"
+      }
+    },
+    {
+      "path": "data/raw/windfor_2026-01-27_2026-02-01.json",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/WINDFOR/stream?publishDateTimeFrom=2026-01-27T00%3A00%3A00Z&publishDateTimeTo=2026-02-01T00%3A00%3A00Z",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-28T19:20:51.812668+00:00",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 28 Oct 2026 19:20:51 GMT"
+      },
+      "bytes": 329093,
+      "rows": 2920,
+      "sha256": "8cf8aeb2da7bbf1d22a6affd14ac983c7ef2c01c2d8fbfdbaa4189bddb888154",
+      "parameters": {
+        "publishDateTimeFrom": "2026-01-27T00:00:00Z",
+        "publishDateTimeTo": "2026-02-01T00:00:00Z"
+      }
+    },
+    {
+      "path": "data/raw/fuelhh_wind_2026-01-01_2026-02-01.json",
+      "url": "https://data.elexon.co.uk/bmrs/api/v1/datasets/FUELHH/stream?settlementDateFrom=2026-01-01&settlementDateTo=2026-02-01&fuelType=WIND",
+      "http_status": 200,
+      "retrieved_at_utc": "2026-10-28T19:20:51.781073+00:00",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Date": "Wed, 28 Oct 2026 19:20:51 GMT"
+      },
+      "bytes": 278650,
+      "rows": 1536,
+      "sha256": "d156607d6cfcaa4b48767fa8dd821867204466002b8bdc8bffddf8848b54e526",
+      "parameters": {
+        "settlementDateFrom": "2026-01-01",
+        "settlementDateTo": "2026-02-01",
+        "fuelType": "WIND"
+      }
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "generated_at_utc": "2026-10-28T19:31:27.250773+00:00",
+  "cutoff_local": "10:00",
+  "timezone": "Europe/London",
+  "cutoff_is_assumption": true,
+  "alignment": "forecast[h] versus (actual[h]+actual[h+30min])/2; explicit pilot convention",
+  "bias_sign": "forecast minus actual: positive means wind overforecast",
+  "window": {
+    "decisions": [
+      "2026-01-01",
+      "2026-01-31"
+    ],
+    "deliveries": [
+      "2026-01-02",
+      "2026-02-01"
+    ]
+  },
+  "raw_rows": {
+    "WINDFOR": 19272,
+    "FUELHH": 1536
+  },
+  "unique_rows": {
+    "WINDFOR": 19272,
+    "FUELHH_WIND": 1536
+  },
+  "duplicates_removed": {
+    "WINDFOR": 0,
+    "FUELHH_WIND": 0
+  },
+  "null_generation_rows": {
+    "WINDFOR": 0,
+    "FUELHH_WIND": 0
+  },
+  "forecast_publications": {
+    "count": 264,
+    "first": "2025-12-30T02:30:00Z",
+    "last": "2026-01-31T22:30:00Z",
+    "observed_utc_clock_times": [
+      "02:30:00",
+      "04:30:00",
+      "07:30:00",
+      "09:30:00",
+      "11:30:00",
+      "12:25:00",
+      "15:30:00",
+      "18:30:00",
+      "22:30:00"
+    ],
+    "per_publication_target_counts": {
+      "73": 264
+    }
+  },
+  "forecast_targets": {
+    "first": "2025-12-29T21:00:00Z",
+    "last": "2026-02-02T21:00:00Z",
+    "observed_minutes": [
+      0
+    ]
+  },
+  "actual_targets": {
+    "first": "2026-01-01T00:00:00Z",
+    "last": "2026-02-01T23:30:00Z",
+    "unique_target_count": 1536,
+    "observed_minutes": [
+      0,
+      30
+    ]
+  },
+  "comparison": {
+    "expected_hours": 744,
+    "matched_hours": 744,
+    "mae_mw": 2013.008064516129,
+    "rmse_mw": 2505.943149370381,
+    "bias_mw": 1729.9314516129032,
+    "missing_reason_counts": {}
+  },
+  "daily": [
+    {
+      "decision_date": "2026-01-01",
+      "delivery_date": "2026-01-02",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 3196.2083333333335,
+      "rmse_mw": 3246.195728592676,
+      "bias_mw": 3196.2083333333335
+    },
+    {
+      "decision_date": "2026-01-02",
+      "delivery_date": "2026-01-03",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 2102.2083333333335,
+      "rmse_mw": 2463.1866639917216,
+      "bias_mw": 2102.2083333333335
+    },
+    {
+      "decision_date": "2026-01-03",
+      "delivery_date": "2026-01-04",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 887.75,
+      "rmse_mw": 1000.2552382600486,
+      "bias_mw": 867.375
+    },
+    {
+      "decision_date": "2026-01-04",
+      "delivery_date": "2026-01-05",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1063.7291666666667,
+      "rmse_mw": 1261.7015338092708,
+      "bias_mw": 30.520833333333332
+    },
+    {
+      "decision_date": "2026-01-05",
+      "delivery_date": "2026-01-06",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 2127.2708333333335,
+      "rmse_mw": 2504.3718045483315,
+      "bias_mw": 2015.9791666666667
+    },
+    {
+      "decision_date": "2026-01-06",
+      "delivery_date": "2026-01-07",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1445.1041666666667,
+      "rmse_mw": 1730.2546868163658,
+      "bias_mw": 1415.3958333333333
+    },
+    {
+      "decision_date": "2026-01-07",
+      "delivery_date": "2026-01-08",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 2061.7291666666665,
+      "rmse_mw": 2329.556263629764,
+      "bias_mw": 599.9791666666666
+    },
+    {
+      "decision_date": "2026-01-08",
+      "delivery_date": "2026-01-09",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 797.0625,
+      "rmse_mw": 1022.9824605453084,
+      "bias_mw": 743.1458333333334
+    },
+    {
+      "decision_date": "2026-01-09",
+      "delivery_date": "2026-01-10",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1101.2291666666667,
+      "rmse_mw": 1238.0421665880367,
+      "bias_mw": -86.14583333333333
+    },
+    {
+      "decision_date": "2026-01-10",
+      "delivery_date": "2026-01-11",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 4897.104166666667,
+      "rmse_mw": 4966.211449007181,
+      "bias_mw": 4897.104166666667
+    },
+    {
+      "decision_date": "2026-01-11",
+      "delivery_date": "2026-01-12",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 4900.875,
+      "rmse_mw": 5178.716586101876,
+      "bias_mw": 4900.875
+    },
+    {
+      "decision_date": "2026-01-12",
+      "delivery_date": "2026-01-13",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1275.75,
+      "rmse_mw": 1430.6348678121892,
+      "bias_mw": 573.6666666666666
+    },
+    {
+      "decision_date": "2026-01-13",
+      "delivery_date": "2026-01-14",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1018.1458333333334,
+      "rmse_mw": 1140.2877880532324,
+      "bias_mw": -198.9375
+    },
+    {
+      "decision_date": "2026-01-14",
+      "delivery_date": "2026-01-15",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1110.25,
+      "rmse_mw": 1212.2166077754696,
+      "bias_mw": 1110.25
+    },
+    {
+      "decision_date": "2026-01-15",
+      "delivery_date": "2026-01-16",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 858.7083333333334,
+      "rmse_mw": 1084.8288075390822,
+      "bias_mw": 396.625
+    },
+    {
+      "decision_date": "2026-01-16",
+      "delivery_date": "2026-01-17",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1924.125,
+      "rmse_mw": 1984.6374039103466,
+      "bias_mw": 1924.125
+    },
+    {
+      "decision_date": "2026-01-17",
+      "delivery_date": "2026-01-18",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1385.75,
+      "rmse_mw": 1459.110580970476,
+      "bias_mw": 1385.75
+    },
+    {
+      "decision_date": "2026-01-18",
+      "delivery_date": "2026-01-19",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 815.9791666666666,
+      "rmse_mw": 896.2037121938292,
+      "bias_mw": -790.8125
+    },
+    {
+      "decision_date": "2026-01-19",
+      "delivery_date": "2026-01-20",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 979.125,
+      "rmse_mw": 1298.857494749392,
+      "bias_mw": 147.29166666666666
+    },
+    {
+      "decision_date": "2026-01-20",
+      "delivery_date": "2026-01-21",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 3843.3125,
+      "rmse_mw": 3924.0877827953,
+      "bias_mw": 3843.3125
+    },
+    {
+      "decision_date": "2026-01-21",
+      "delivery_date": "2026-01-22",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 2630.3333333333335,
+      "rmse_mw": 2745.774773022483,
+      "bias_mw": 2630.3333333333335
+    },
+    {
+      "decision_date": "2026-01-22",
+      "delivery_date": "2026-01-23",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1793.2083333333333,
+      "rmse_mw": 1887.6038989064064,
+      "bias_mw": 1793.2083333333333
+    },
+    {
+      "decision_date": "2026-01-23",
+      "delivery_date": "2026-01-24",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1671.4375,
+      "rmse_mw": 1998.8866406285608,
+      "bias_mw": 1634.3541666666667
+    },
+    {
+      "decision_date": "2026-01-24",
+      "delivery_date": "2026-01-25",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1863.2083333333333,
+      "rmse_mw": 2036.9751880341269,
+      "bias_mw": 1863.2083333333333
+    },
+    {
+      "decision_date": "2026-01-25",
+      "delivery_date": "2026-01-26",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1963.1666666666667,
+      "rmse_mw": 2345.832346062551,
+      "bias_mw": 1959.7916666666667
+    },
+    {
+      "decision_date": "2026-01-26",
+      "delivery_date": "2026-01-27",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 3477.4791666666665,
+      "rmse_mw": 3553.241602454956,
+      "bias_mw": 3477.4791666666665
+    },
+    {
+      "decision_date": "2026-01-27",
+      "delivery_date": "2026-01-28",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 5374.791666666667,
+      "rmse_mw": 5399.402804554716,
+      "bias_mw": 5374.791666666667
+    },
+    {
+      "decision_date": "2026-01-28",
+      "delivery_date": "2026-01-29",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1534.0833333333333,
+      "rmse_mw": 1578.6928400842685,
+      "bias_mw": 1534.0833333333333
+    },
+    {
+      "decision_date": "2026-01-29",
+      "delivery_date": "2026-01-30",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1559.8541666666667,
+      "rmse_mw": 1664.4616215411318,
+      "bias_mw": 1559.8541666666667
+    },
+    {
+      "decision_date": "2026-01-30",
+      "delivery_date": "2026-01-31",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 1889.9583333333333,
+      "rmse_mw": 2016.8685350066821,
+      "bias_mw": 1889.9583333333333
+    },
+    {
+      "decision_date": "2026-01-31",
+      "delivery_date": "2026-02-01",
+      "expected_hours": 24,
+      "matched_hours": 24,
+      "mae_mw": 854.3125,
+      "rmse_mw": 954.6407537655199,
+      "bias_mw": 836.8958333333334
+    }
+  ]
+}
