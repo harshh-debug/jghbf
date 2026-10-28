@@ -8,3 +8,18 @@ dist/
 !.env.example
 .DS_Store
 frontend/*.tsbuildinfo
+
+# Local Codex instructions and challenge preparation (not submission material)
+AGENTS.md
+START_HERE_PROMPT.md
+PACK_MANIFEST.json
+context/acceptance-and-delivery.md
+context/api-and-ui.md
+context/architecture.md
+context/assignment-original.md
+context/build-plan.md
+context/requirements.md
+context/sources-and-open-questions.md
+evidence/reference-findings.md
+evidence/research-manifest.json
+evidence/verification.json
