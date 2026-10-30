@@ -34,7 +34,7 @@ Open the Vite URL shown in the terminal; Vite proxies `/api` to port 8000. For p
 
 The repository contains `vercel.json` for Vercel Services: a Vite frontend and a FastAPI service share one public origin. The API service is rooted at the repository root so the Python code, requirements, `data/manifest.json` and `data/raw/` are available. `.vercelignore` excludes preparation notes and development artifacts; the historical snapshot remains included. Vercel Services is a beta feature; a local Services run is not proof of a cloud deployment.
 
-No public deployment URL is available yet. Import the GitHub repository into Vercel with the repository root as the project root, or use the Vercel CLI from this directory:
+Production URL: https://wind-outlook-pilot.vercel.app. The Vercel cloud deployment served the UI and API and reproduced the reference baseline. To deploy again, use the connected GitHub repository with the repository root as the project root, or use the Vercel CLI from this directory:
 
 ```sh
 npx vercel login
@@ -42,7 +42,7 @@ npx vercel
 npx vercel --prod
 ```
 
-When prompted, link or create the intended Vercel project. No application secrets or database are needed. Check the resulting URL, `/api/health` and `/api/analysis` in a fresh browser, then change the dashboard filters and verify the results. Ensure deployment protection allows the intended reviewers access. Add the actual production URL here after deployment.
+When prompted, link or create the intended Vercel project. No application secrets or database are needed. Check the resulting URL, `/api/health` and `/api/analysis` in a fresh browser, then change the dashboard filters and verify the results. Ensure deployment protection allows the intended reviewers access. Verify the URL and API again after each deployment.
 
 To test Services locally without linking an account, use `npx vercel dev --local` and open the printed URL. The frontend and API run locally; this does not verify Vercel's cloud build, data packaging, plan limits or public access.
 
@@ -85,4 +85,4 @@ The reference analysis and 18 tests passed, including HTTP requests through Fast
 
 ## AI assistance and submission
 
-OpenAI Codex assisted with implementation, testing and documentation. The checks and limitations above describe what was actually verified. No public repository, deployed app or video URL is available yet. Record an unlisted video of at most ten minutes, create an anonymous public repository, verify app/repository/video URLs in an incognito session, and submit the required form only after the video is ready.
+OpenAI Codex assisted with implementation, testing and documentation. The checks and limitations above describe what was actually verified. The deployed app URL is above. The video still needs to be recorded and its URL added. Record an unlisted video of at most ten minutes, create an anonymous public repository, verify app/repository/video URLs in an incognito session, and submit the required form only after the video is ready.
