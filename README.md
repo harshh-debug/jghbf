@@ -30,19 +30,23 @@ npm run dev
 
 Open the Vite URL shown in the terminal; Vite proxies `/api` to port 8000. For production without Docker, run `npm run build --prefix frontend` first, then start Uvicorn as above and open port 8000. The backend serves `frontend/dist` when it exists. The committed npm lockfile fixes the frontend dependency tree; the Docker build uses `npm ci`.
 
-## Deployment
+## Deployment to Vercel
 
-No app has been deployed; there is no deployment URL yet. Deployment was deferred at the user’s request. The included `heroku.yml` specifies the same Docker image and the server listens on Heroku's `PORT`. In a network-enabled environment with an authenticated Heroku CLI and an initialized Git repository, create a Heroku app, set its stack to container, commit the curated submission files including a generated lockfile, and deploy:
+The repository contains `vercel.json` for Vercel Services: a Vite frontend and a FastAPI service share one public origin. The API service is rooted at the repository root so the Python code, requirements, `data/manifest.json` and `data/raw/` are available. `.vercelignore` excludes preparation notes and development artifacts; the historical snapshot remains included. Vercel Services is a beta feature; a local Services run is not proof of a cloud deployment.
+
+No public deployment URL is available yet. Import the GitHub repository into Vercel with the repository root as the project root, or use the Vercel CLI from this directory:
 
 ```sh
-heroku login
-heroku create YOUR-ANONYMOUS-APP-NAME
-heroku stack:set container -a YOUR-ANONYMOUS-APP-NAME
-git push heroku HEAD:main
-heroku open -a YOUR-ANONYMOUS-APP-NAME
+npx vercel login
+npx vercel
+npx vercel --prod
 ```
 
-Confirm `/api/health`, `/api/analysis`, and the UI in a fresh browser, including changing the date and cutoff. Check Heroku's current account and deployment requirements before using these commands. The source challenge and internal preparation files should not be published: curate the repository while retaining methodology, provenance, data, scripts and tests. No credentials belong in the repository.
+When prompted, link or create the intended Vercel project. No application secrets or database are needed. Check the resulting URL, `/api/health` and `/api/analysis` in a fresh browser, then change the dashboard filters and verify the results. Ensure deployment protection allows the intended reviewers access. Add the actual production URL here after deployment.
+
+To test Services locally without linking an account, use `npx vercel dev --local` and open the printed URL. The frontend and API run locally; this does not verify Vercel's cloud build, data packaging, plan limits or public access.
+
+The existing `heroku.yml` and Docker configuration remain available as an alternative. Do not publish the source challenge or local preparation notes. No credentials belong in the repository.
 
 ## Data and method
 
@@ -75,7 +79,7 @@ The reference analysis and 18 tests passed, including HTTP requests through Fast
 - `scripts/analyze_data.py`: shared selection/alignment/metrics and reproducible reference outputs; `scripts/fetch_elexon.py`: explicit source acquisition.
 - `data/raw/` and `data/manifest.json`: source snapshot and provenance; `data/derived/`: reference outputs.
 - `tests/`: reference and HTTP-level API regression tests.
-- `Dockerfile`, `compose.yaml`, `heroku.yml`: container and deployment configuration; `requirements-dev.txt` supplies HTTP test dependencies.
+- `Dockerfile`, `compose.yaml`, `heroku.yml`, `vercel.json` and `.vercelignore`: container and deployment configuration; `requirements-dev.txt` supplies HTTP test dependencies.
 - `context/methodology.md` and `evidence/`: methodology and saved source schema. Other supplied preparation notes are not part of the curated commit.
 - `DEMO.md`: customer and technical video outline.
 

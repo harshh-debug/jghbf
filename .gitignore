@@ -23,3 +23,5 @@ context/sources-and-open-questions.md
 evidence/reference-findings.md
 evidence/research-manifest.json
 evidence/verification.json
+
+.vercel/

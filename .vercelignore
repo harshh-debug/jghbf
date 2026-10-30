@@ -1,0 +1,15 @@
+.git
+.vercel
+.venv
+**/node_modules
+frontend/dist
+**/__pycache__
+*.pyc
+AGENTS.md
+START_HERE_PROMPT.md
+PACK_MANIFEST.json
+context
+evidence
+tests
+data/derived
+DEMO.md
